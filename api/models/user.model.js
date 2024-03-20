@@ -1,7 +1,7 @@
-import  Mongoose  from "mongoose";
+import  mongoose  from "mongoose";
 
 //just creating a schema(rules) for the user
-const userSchema = new Mongoose.Schema({
+const userSchema = new mongoose.Schema({
     username: {
         type: String,
         required: true,
@@ -20,6 +20,6 @@ const userSchema = new Mongoose.Schema({
 
 // Timestamp Tell mongodb to record the two info one is time of creation of user and the time of the pdate of the user
 
-const User = Mongoose.model('user', userSchema);
+const User = mongoose.model('user', userSchema);
 
 export default User;
